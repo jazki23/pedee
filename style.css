@@ -1,0 +1,124 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    color: #222;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #1e1f26;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sidebar-header h2 {
+    color: #fff;
+    text-align: center;
+}
+.sidebar-nav, .sidebar-footer {
+    display: flex;
+    flex-direction: column;
+}
+.nav-item {
+    color: #ccc;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.nav-item:hover, .nav-item.active {
+    background: #333;
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    background: #f8f9fb;
+}
+.header h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Boxed Sections */
+.box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.box-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 15px;
+}
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+.filter-item select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Metrics Grid */
+.metric-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gain-charts {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Progress Bars */
+.progress-bar-container {
+    background: #eee;
+    border-radius: 6px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+.progress-bar {
+    background: #007bff;
+    height: 8px;
+    border-radius: 6px;
+}
+.progress-bar.green {
+    background: #2ecc71;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+.footer strong {
+    display: block;
+}
